@@ -1,0 +1,19 @@
+.outer-container {
+  margin: 0 $gutter;
+  background-color: orange;
+}
+
+.container {
+  max-width: $max-content-width;
+  margin: auto;
+  background-color: blue;
+}
+
+.grid-item {
+  margin: $gutter;
+  background-color: green;
+}
+
+.row {
+  display: flex;
+}
