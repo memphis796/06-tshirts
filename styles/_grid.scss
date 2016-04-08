@@ -1,19 +1,31 @@
 .outer-container {
-  margin: 0 $gutter;
-  background-color: orange;
+  display: flex;
+  width: 100%;
+  padding: $gutter;
+  // background-color: orange;
 }
 
 .container {
+  display: flex;
   max-width: $max-content-width;
   margin: auto;
-  background-color: blue;
+  // background-color: blue;
 }
 
 .grid-item {
-  margin: $gutter;
-  background-color: green;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  width: calc(100% / 3);
+  padding: $gutter;
+  // background-color: red;
+
 }
 
 .row {
   display: flex;
+//   flex-direction: row;
+//   flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: center;
 }
