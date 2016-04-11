@@ -1,31 +1,22 @@
 .outer-container {
-  display: flex;
   width: 100%;
   padding: $gutter;
-  // background-color: orange;
 }
 
 .container {
-  display: flex;
   max-width: $max-content-width;
   margin: auto;
-  // background-color: blue;
 }
 
 .grid-item {
-  display: flex;
   flex-grow: 1;
   flex-wrap: wrap;
   width: calc(100% / 3);
+  min-width: 32em;
   padding: $gutter;
-  // background-color: red;
-
 }
 
 .row {
   display: flex;
-//   flex-direction: row;
-//   flex-grow: 1;
   flex-wrap: wrap;
-  justify-content: center;
-}
+ }

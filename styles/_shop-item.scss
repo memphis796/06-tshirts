@@ -1,14 +1,14 @@
 .shop-item {
   display: flex;
   flex-direction: column;
-  margin: 0;
   border: 5px solid $brand-primary;
   color: $brand-primary;
+  // margin: 0;
+  padding: 0;
 }
 
 .shop-item__btns {
   display: flex;
-  flex-grow: 1;
   margin-bottom: 0;
   padding: 0;
   border-top: 2px solid $brand-primary;
@@ -19,25 +19,22 @@
 
 .shop-item__shirt {
   align-self: center;
-  margin: $gutter;
+  padding: $gutter;
 }
 
 .shop-item__info {
   flex-grow: 1;
-  // align-self: center;
+  align-self: center;
   color: $brand-primary;
   font-family: sans-serif;
-  margin: $gutter;
   text-align: center;
 }
 
 .shop-item__title {
-  margin: auto;
   font-size: 2em;
+
 }
 
-.shop-item__desc {
-  // background-color: $green;
-  // align-self: center;
-  margin: $gutter;
-}
+// .shop-item__desc {
+//
+// }
