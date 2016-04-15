@@ -1,0 +1,45 @@
+.shop-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border: 5px solid $brand-primary;
+  color: $brand-primary;
+}
+
+.shop-item__btns {
+  display: flex;
+  margin-bottom: 0;
+  padding: 0;
+  border-top: 2px solid $brand-primary;
+  font-family: sans-serif;
+  line-height: 3em;
+  list-style-type: none;
+}
+
+.shop-item__shirt {
+  width: 100%;
+  padding: $gutter;
+
+  & img {
+    width: 100%;
+  }
+}
+
+.shop-item__info {
+  flex-grow: 1;
+  align-self: center;
+  color: $brand-primary;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.shop-item__title {
+  font-size: 2em;
+
+}
+
+.shop-item__desc {
+  margin-bottom: 0;
+  padding: 0 0.5em;
+}

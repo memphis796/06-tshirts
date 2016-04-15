@@ -1,0 +1,22 @@
+.outer-container {
+  // width: 100%;
+  padding: $gutter;
+}
+
+.container {
+  // max-width: $max-content-width;
+  margin: auto;
+}
+
+.grid-item {
+  flex-grow: 1;
+  // flex-wrap: wrap;
+  width: calc(100% / 3);
+  min-width: 16rem;
+  padding: $gutter;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+ }

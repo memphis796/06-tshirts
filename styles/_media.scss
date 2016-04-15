@@ -1,0 +1,67 @@
+@media screen and (min-width: 640px) and (max-width: 980px) {
+  .grid-item {
+    width: calc(100% / 1);
+    min-width: 50%;
+  }
+
+  .shop-item {
+    flex-direction: row;
+
+    &__shirt {
+      width: 29%;
+    }
+
+    &__info {
+      // min-width: 50%;
+    }
+
+    & img {
+      margin-top: 2em;
+    }
+  }
+
+  .shop-item__desc {
+    font-size: 1.2em;
+    // padding: 0 2em;
+  }
+
+  .shop-item__btns {
+    flex-direction: column;
+    width: 10%;
+    margin: 0;
+    border: 0;
+    border-left: 4px solid $brand-primary;
+  }
+
+  .shop-btn {
+    border: 0;
+    border-top: 2px solid $brand-primary;
+
+    &:first-child {
+      border-top: 0;
+    }
+
+    &__dropdown {
+      border-right: 0;
+    }
+
+    &:hover {
+      .dropdown__options {
+        display: flex;
+      }
+    }
+  }
+
+  .dropdown__options {
+    right: 100%;
+    bottom: 50%;
+    width: auto;
+
+    transform: translateY(50%);
+
+    &-item {
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+  }
+}
