@@ -1,9 +1,8 @@
 @media screen and (min-width: 640px) and (max-width: 980px) {
-
   .grid-item {
     width: calc(100% / 1);
     min-width: 50%;
-}
+  }
 
   .shop-item {
     flex-direction: row;
@@ -38,7 +37,6 @@
     border: 0;
     border-top: 2px solid $brand-primary;
 
-
     &:first-child {
       border-top: 0;
     }
@@ -47,12 +45,23 @@
       border-right: 0;
     }
 
-    .dropdown__options {
-      display: none;
-      position: absolute;
-      right: 100%;
-      bottom: 50%;
+    &:hover {
+      .dropdown__options {
+        display: flex;
+      }
     }
   }
 
+  .dropdown__options {
+    right: 100%;
+    bottom: 50%;
+    width: auto;
+
+    transform: translateY(50%);
+
+    &-item {
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+  }
 }
