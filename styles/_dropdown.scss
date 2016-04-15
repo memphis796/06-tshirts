@@ -62,7 +62,7 @@
 
 
 .dropdown__options-item {
-  padding: $gutter;
+  padding: $gutter / 2 0;
   border: 1px solid $brand-primary;
   border-top: 2px solid $brand-primary;
   background-color: $brand-white;
@@ -84,7 +84,6 @@
   &:hover {
     .dropdown__options {
       display: block;
-
     }
   }
 }

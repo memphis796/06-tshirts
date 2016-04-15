@@ -1,10 +1,10 @@
 .shop-item {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
   border: 5px solid $brand-primary;
   color: $brand-primary;
-  // margin: 0;
-  padding: 0;
 }
 
 .shop-item__btns {
@@ -18,8 +18,12 @@
 }
 
 .shop-item__shirt {
-  align-self: center;
+  width: 100%;
   padding: $gutter;
+
+  & img {
+    width: 100%;
+  }
 }
 
 .shop-item__info {
@@ -35,6 +39,7 @@
 
 }
 
-// .shop-item__desc {
-//
-// }
+.shop-item__desc {
+  margin-bottom: 0;
+  padding: 0 0.5em;
+}
